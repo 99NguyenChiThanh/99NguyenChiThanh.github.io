@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Web mua bán giày dép";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using BaoCao_webMuaBanGiayDep.Models;
+@model List<ChiTietSanPham>
+
+@foreach (var i in Model)
+{
+    <div class="w-25 float-left mb-2 mt-2 text-center">
+        <img class="rounded" src="~/Content/Hinh/@i.Hinh" />
+        <p class="mt-2 mb-2">@i.TenSP - @i.Gia ₫</p>
+        <a class="nav-link mt-0" style="display:inline" href="@Url.Action("Sua", "Qlysanpham", new { masp = @i.MaSP })">Sửa</a>
+        <a class="nav-link mt-0 text-danger" style="display:inline" href="@Url.Action("Xoa", "Qlysanpham", new { masp = @i.MaSP })">Xóa</a>
+    </div>
+}
+
+<table class="w-100">
+    <tr>
+        <td style="text-align:center">
+            <a href="@Url.Action("Them")" class="btn btn-primary text-light mb-2" style="width:80px">Thêm</a>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Web mua bán giày dép - Giỏ hàng của " + Session["kh"].ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using BaoCao_webMuaBanGiayDep.Models;
+@model List<Giohang>
+
+@{int dong = 0;}
+@{ KhachHang a = (KhachHang)Session["kh"];}
+<h2 class="text-center text-success">THÔNG TIN KHÁCH HÀNG</h2>
+<table class="table justify-content-center">
+    <tbody>
+        <tr>
+            <td>Họ tên</td>
+            <th>@a.HoTen</th>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <th>@a.DiaChi</th>
+        </tr>
+        <tr>
+            <td>Số điện thoại</td>
+            <th>@a.DienThoai</th>
+        </tr>
+        <tr>
+            <td>Ngày đặt</td>
+            <th>@DateTime.Now</th>
+        </tr>
+        <tr>
+            <td>Ngày giao</td>
+            <th>@DateTime.Now.AddDays(3)</th>
+        </tr>
+    </tbody>
+</table>
+<h2 class="text-center text-success">THÔNG TIN GIỎ HÀNG</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Hình</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Thành tiền</th>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <th><span>@(dong++)</span></th>
+                <td style="width:100px"><img class="rounded img-thumbnail" style="width:50px" src="~/Content/Hinh/@i.iHinh" /></td>
+                <td class="pt-3">@i.iTensp</td>
+                <td class="pt-3">@i.iSolg</td>
+                <td class="pt-3">@String.Format("{0:0,0}", i.iDongia) ₫</td>
+                <td class="pt-3">@String.Format("{0:0,0}", i.iThanhtien) ₫</td>
+                <td><a href="@Url.Action("Chitietsp", "Home", new { tensp = @i.iTensp })" class="btn btn-info">Chi tiết</a></td>
+            </tr>
+        }
+        <tr class="bg-success">
+            <td colspan="7"><h3 style="color:white" class="text-right">Tổng tiền: @String.Format("{0:0,0}", ViewBag.tongtien) đồng.</h3></td>
+        </tr>
+        <tr>
+            <td colspan="7" style="text-align:center"><a href="@Url.Action("Xacnhandathang")" class="btn btn-primary">Xác nhận đơn đặt hàng</a></td>
+        </tr>
+    </tbody>
+</table>

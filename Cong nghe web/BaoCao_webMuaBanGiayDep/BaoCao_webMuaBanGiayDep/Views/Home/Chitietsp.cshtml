@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Web mua bán giày dép";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using BaoCao_webMuaBanGiayDep.Models;
+@model ChiTietSanPham
+
+<h2>Chi tiết sản phẩm</h2>
+<div class="w-100 float-left">
+    <img class="float-left mr-3 rounded" style="width:350px;height:350px" src="~/Content/Hinh/@Model.Hinh" />
+    <p class="font-weight-bold mt-2">@Model.TenSP</p>
+    <p>Mô tả: @Model.MoTa</p>
+    <p>Cỡ giày: @Model.Size</p>
+    <p class="font-weight-bold d-inline">Giá:</p>
+    <p class="text-danger d-inline">@Model.Gia ₫</p>
+    <br />
+    <a class=" mt-3 mr-2 btn btn-light btn-lg border-danger text-danger" href="@Url.Action("ThemGiohang", "Giohang", new { masp = @Model.MaSP })">Đặt hàng</a>
+    <a class=" mt-3 btn btn-light btn-lg border-info text-info" href="@Url.Action("Index", "Home")">Quay lại</a>
+</div>

@@ -1,0 +1,18 @@
+c:\users\sylvie\documents\visual studio 2013\Projects\[CSDLPhantan] QL_Chungcu\[CSDLPhantan] QL_Chungcu\bin\Debug\[CSDLPhantan] QL_Chungcu.exe.config
+c:\users\sylvie\documents\visual studio 2013\Projects\[CSDLPhantan] QL_Chungcu\[CSDLPhantan] QL_Chungcu\bin\Debug\[CSDLPhantan] QL_Chungcu.exe
+c:\users\sylvie\documents\visual studio 2013\Projects\[CSDLPhantan] QL_Chungcu\[CSDLPhantan] QL_Chungcu\bin\Debug\[CSDLPhantan] QL_Chungcu.pdb
+c:\users\sylvie\documents\visual studio 2013\Projects\[CSDLPhantan] QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\[CSDLPhantan] QL_Chungcu.csprojResolveAssemblyReference.cache
+c:\users\sylvie\documents\visual studio 2013\Projects\[CSDLPhantan] QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\_CSDLPhantan__QL_Chungcu.Properties.Resources.resources
+c:\users\sylvie\documents\visual studio 2013\Projects\[CSDLPhantan] QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\[CSDLPhantan] QL_Chungcu.csproj.GenerateResource.Cache
+c:\users\sylvie\documents\visual studio 2013\Projects\[CSDLPhantan] QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\[CSDLPhantan] QL_Chungcu.exe
+c:\users\sylvie\documents\visual studio 2013\Projects\[CSDLPhantan] QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\[CSDLPhantan] QL_Chungcu.pdb
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[CSDLPhantan] QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\_CSDLPhantan__QL_Chungcu.Form1.resources
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[CSDL Nangcao]\QL_Chungcu\[CSDLPhantan] QL_Chungcu\bin\Debug\[CSDLPhantan] QL_Chungcu.exe.config
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[CSDL Nangcao]\QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\[CSDLPhantan] QL_Chungcu.exe
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[CSDL Nangcao]\QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\[CSDLPhantan] QL_Chungcu.pdb
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[CSDL Nangcao]\QL_Chungcu\[CSDLPhantan] QL_Chungcu\bin\Debug\[CSDLPhantan] QL_Chungcu.exe
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[CSDL Nangcao]\QL_Chungcu\[CSDLPhantan] QL_Chungcu\bin\Debug\[CSDLPhantan] QL_Chungcu.pdb
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[CSDL Nangcao]\QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\[CSDLPhantan] QL_Chungcu.csprojResolveAssemblyReference.cache
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[CSDL Nangcao]\QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\_CSDLPhantan__QL_Chungcu.Form1.resources
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[CSDL Nangcao]\QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\_CSDLPhantan__QL_Chungcu.Properties.Resources.resources
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[CSDL Nangcao]\QL_Chungcu\[CSDLPhantan] QL_Chungcu\obj\Debug\[CSDLPhantan] QL_Chungcu.csproj.GenerateResource.Cache

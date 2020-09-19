@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Web mua bán giày dép - Giỏ hàng của " + Session["kh"].ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using BaoCao_webMuaBanGiayDep.Models;
+@model List<Giohang>
+
+@{int dong = 0;}
+<h2 class="text-center text-success">THÔNG TIN GIỎ HÀNG</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Hình</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Thành tiền</th>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <th><span>@(dong++)</span></th>
+                <td style="width:100px"><img class="rounded img-thumbnail" style="width:50px" src="~/Content/Hinh/@i.iHinh" /></td>
+                <td class="pt-3">@i.iTensp</td>
+                <td class="pt-3">@i.iSolg</td>
+                <td class="pt-3">@String.Format("{0:0,0}", i.iDongia) ₫</td>
+                <td class="pt-3">@String.Format("{0:0,0}", i.iThanhtien) ₫</td>
+                <td><a href="@Url.Action("Chitietsp", "Home", new { tensp = @i.iTensp })" class="btn btn-info">Chi tiết</a></td>
+                <td><a href="@Url.Action("XoaGiohang", "Giohang", new { masp = @i.iMasp })" class="btn btn-danger">Xoá</a></td>
+            </tr>
+        }
+        <tr class="bg-success">
+            <td colspan="8"><h3 style="color:white" class="text-right">Tổng tiền: @String.Format("{0:0,0}", ViewBag.tongtien) đồng.</h3></td>
+        </tr>
+        <tr>
+            <td colspan="8" style="text-align:center"><a href="@Url.Action("Dathang", "Giohang")" class="btn btn-primary btn-lg">Đặt hàng</a></td>
+        </tr>
+    </tbody>
+</table>

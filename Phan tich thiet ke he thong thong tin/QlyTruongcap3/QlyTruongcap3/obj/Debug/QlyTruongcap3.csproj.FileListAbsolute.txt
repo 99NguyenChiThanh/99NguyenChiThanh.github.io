@@ -1,0 +1,11 @@
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\bin\Debug\QlyTruongcap3.exe.config
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\bin\Debug\QlyTruongcap3.exe
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\bin\Debug\QlyTruongcap3.pdb
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\obj\Debug\QlyTruongcap3.csprojResolveAssemblyReference.cache
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\obj\Debug\QlyTruongcap3.frmHocsinh.resources
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\obj\Debug\QlyTruongcap3.Giaovien.resources
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\obj\Debug\QlyTruongcap3.Properties.Resources.resources
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\obj\Debug\QlyTruongcap3.csproj.GenerateResource.Cache
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\obj\Debug\QlyTruongcap3.exe
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\obj\Debug\QlyTruongcap3.pdb
+C:\Users\sylvie\Documents\Visual Studio 2013\Projects\[Phan tich thiet ke - UML]\QlyTruongcap3\QlyTruongcap3\obj\Debug\QlyTruongcap3.HieuPho.resources

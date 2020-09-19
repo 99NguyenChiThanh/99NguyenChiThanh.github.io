@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Web mua bán giày dép";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using BaoCao_webMuaBanGiayDep.Models;
+@model List<ChiTietSanPham>
+
+@if (Model != null)
+{
+    foreach (var i in Model)
+    {
+        <div class="w-25 float-left mb-2 mt-2 text-center">
+            <a href="@Url.Action("Chitietsp", "Home", new { tensp = @i.TenSP })"><img class="rounded" src="~/Content/Hinh/@i.Hinh" /></a>
+            <p class="mt-2 mb-1">@i.TenSP - @i.Gia ₫</p>
+            <a class="nav-link mt-0 pl-3 pr-0" style="display:inline" href="@Url.Action("Chitietsp", "Home", new { tensp = @i.TenSP })">Chi tiết</a>
+            <a class="nav-link mt-0 text-danger" style="display:inline" href="@Url.Action("ThemGiohang", "Giohang", new { masp = @i.MaSP })">Đặt hàng</a>
+        </div>
+    }
+}
+else
+{
+    <h2>KHÔNG TÌM THẤY SẢN PHẨM</h2>
+}

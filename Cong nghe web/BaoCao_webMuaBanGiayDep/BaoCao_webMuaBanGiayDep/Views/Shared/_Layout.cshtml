@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="icon" href="~/Content/icon.ico" />
+    <link href="~/Content/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" />
+    @using BaoCao_webMuaBanGiayDep.Models;
+</head>
+<body>
+    <a href="@Url.Action("Index","Home")"><img class="mt-md-3" src="~/Content/Header.png" /></a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index","Home")">Trang chủ</a>
+            <ul class="navbar-nav mr-auto">
+                @if (Session["kh"] == null || Session["kh"] == "Saitaikhoanhoacmatkhau")
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Dangnhap", "Login")">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Dangky", "Login")">Đăng ký</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Dangnhap", "Login")">Giỏ hàng</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        @{string giohang;}
+                        @if (Session["Giohang"] == null) { giohang = "0"; }
+                        else
+                        {
+                            List<Giohang> lstGiohang = Session["Giohang"] as List<Giohang>;
+                            giohang = lstGiohang.Count.ToString();
+                        }
+                        @{ KhachHang a = (KhachHang)Session["kh"];}
+                        <a class="nav-link" href="@Url.Action("Giohang", "Giohang")">Giỏ hàng của @a.HoTen<span class="text-danger">(@giohang)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Dangxuat", "Login")">Đăng xuất</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Qlysanpham", "Qlysanpham")">Quản lý sản phẩm</a>
+                    </li>
+                }
+            </ul>
+            <form class="form-inline mt-2 mt-lg-0" action="@Url.Action("Timkiem","Home")" method="post">
+                <input class="form-control mr-lg-2" type="text" name="txtTukhoa" placeholder="Nhap tu khoa tim kiem..." />
+                <button class="btn btn-success" type="submit">Tìm kiếm</button>
+            </form>
+        </div>
+    </nav>
+    <div class="mt-2">
+        <div class="row mr-0">
+            <div class="col-3">
+                <ul class="flex-row">
+                    <li class="bg-success nav rounded-top text-light">
+                        <h5 class="pl-3 pt-1">Loại</h5>
+                    <li class="nav-item nav border-bottom">
+                        <a class="nav-link text-success" href="@Url.Action("Locsptheoloai", "Home", new { ma = 1 })">Giày Tây</a>
+                    </li>
+                    <li class="nav-item nav border-bottom">
+                        <a class="nav-link text-success" href="@Url.Action("Locsptheoloai", "Home", new { ma = 2 })">Giày Bata</a>
+                    </li>
+                    <li class="nav-item nav border-bottom">
+                        <a class="nav-link text-success" href="@Url.Action("Locsptheoloai", "Home", new { ma = 3 })">Giày Sandal</a>
+                    </li>
+                    <li class="nav-item nav border-bottom">
+                        <a class="nav-link text-success" href="@Url.Action("Locsptheoloai", "Home", new { ma = 4 })">Dép</a>
+                    </li>
+                    <li class="bg-success nav rounded-top text-light">
+                        <h5 class="pl-3 pt-1">Nhóm</h5>
+                    <li class="nav-item nav border-bottom">
+                        <a class="nav-link text-success" href="@Url.Action("Locsptheonhom", "Home", new { ms = 1 })">Người lớn</a>
+                    </li>
+                    <li class="nav-item nav border-bottom">
+                        <a class="nav-link text-success" href="@Url.Action("Locsptheonhom", "Home", new { ms = 2 })">Học sinh</a>
+                    </li>
+                    <li class="nav-item nav border-bottom">
+                        <a class="nav-link text-success" href="@Url.Action("Locsptheonhom", "Home", new { ms = 3 })">Trẻ em</a>
+                    </li>
+                    <li class="nav-item nav border-bottom">
+                        <a class="nav-link text-success" href="@Url.Action("Locsptheonhom", "Home", new { ms = 4 })">Khác</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-9">
+                @RenderBody()
+            </div>
+        </div>
+        <table class="bg-secondary font-italic text-light text-right mt-2" style="width:100%; height:100px">
+            <tr>
+                <td>
+                    <p class="mr-1 d-inline">Nguyễn Chí Thanh - 2001170170</p>
+                    <p class="mr-1 align-text-bottom">Dương Tôn Nguyên - 2001170820</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
